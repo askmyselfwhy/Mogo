@@ -1,0 +1,56 @@
+.about
+  .hoverable-card
+    .content
+      img
+        width: 100%
+
+      .hidden
+        .icon
+          color: #fff
+          font-size: 24px
+          margin: 0
+        p
+          text-transform: uppercase
+          font-weight: bold
+
+  &-item
+    margin: 0 10px
+
+
+  &-stats
+    margin-top: 90px
+
+  &-stat
+    display: flex
+    padding: 90px 20px
+    border-left: 1px solid lighten($cSecondary, 10%)
+    color: #fff
+    justify-content: center
+    align-items: center
+
+    &:last-child
+      border-right: 1px solid lighten($cSecondary, 10%)
+
+    .stat-number
+      font-weight: bold
+
+    .stat-text
+      text-transform: uppercase
+
+
+@media screen and (max-width: 768px)
+
+  .about
+    &-stat
+      padding: 25px 5px
+
+
+
+@media screen and (max-width: 490px)
+
+  .about-stats
+    flex-direction: column
+
+    .about
+      &-stat
+        border: none

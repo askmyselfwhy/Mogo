@@ -1,0 +1,168 @@
+
+#contact
+  background-color: #f8f8f8
+  color: #999999
+
+  .contacts
+    padding: 40px 0px
+  .info
+    .middle
+      margin-top: auto
+    .contact
+      margin-top: auto
+  h1
+    font-weight: bold
+    color: #cccccc
+
+  .stats
+    color: #333333
+
+  .divider
+    margin: 10px 0px
+
+
+  .socials
+    ul
+      list-style: none
+      margin-bottom: 0px
+      li
+
+      .icon
+        font-size: 1.3em
+        color: $cSecondary
+        transition: .2s ease
+        padding: 5px
+        &:hover
+          transform: scale(2)
+          color: darken($cSecondary, 20%)
+  .blogs
+    height: 100%
+
+    .blog-item
+      margin-bottom: 1em
+    .blog-item:last-child
+      margin-bottom: 0px
+    .blog-img, .blog-content
+      padding: 0px
+    .blog-img
+      img
+        width: 100%
+    .blog-content
+      display: flex
+      flex-direction: column
+      justify-content: center
+      margin-left: 20px
+
+      header
+        text-transform: uppercase
+        color: #333333
+        font-size: 14px
+      .date
+        display: block
+        text-transform: capitalize
+        font-style: italic
+
+  .contact
+    form
+      display: flex
+
+      input
+        border: none
+        border: 1px solid #e7e7e7
+        border-right: none
+        padding: 5px
+        font-style: italic
+      button
+        padding: 1em 2.5em
+        border: none
+        text-transform: uppercase
+        font-weight: bold
+        color: #fff
+        background-color: $cSecondary
+        cursor: pointer
+
+        &:hover
+          background-color: darken($cSecondary, 20%)
+
+  footer
+    color: #333333
+    text-align: center
+    .author
+      color: $cMain_1
+
+    .copyright
+      display: block
+      margin: 15px 0px
+
+.footer-container
+  h2
+    text-transform: uppercase
+    color: #333333
+    font-size: 14px
+    font-weight: bold
+    margin-bottom: 40px
+
+  .footer-grid
+    display: grid
+    grid-template-columns: 33.333% 33.333% 33.333%
+    grid-gap: 2px
+    a
+      display: block
+      transition: .2s ease
+      &:hover
+        position: relative
+        z-index: 10
+        box-shadow: 0 0 2px 2px #333333
+        transform: scale(1.1)
+      img
+        display: inline-block
+        width: 100%
+
+
+
+@media screen and (max-width: 768px)
+
+  #contact
+    .contacts
+      flex-direction: column
+      .col
+        flex-basis: auto
+
+      .footer-container
+        margin-top: 20px
+        .footer-grid
+          a
+            text-align: center
+            img
+              width: auto
+        h2
+          margin-bottom: 5px
+    .blogs
+      .blog-img
+        text-align: right
+        img
+          width: auto
+
+    .contact
+      form
+
+        input
+          padding: 3px
+        button
+          padding: 0.5em 1.5em
+
+
+@media screen and (max-width: 360px)
+
+  #contact
+    .contact
+      form
+        flex-direction: column
+        input
+          padding: 3px
+        button
+          padding: 0.5em 1.5em
+
+    .socials
+      ul
+        flex-direction: column

@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background-color: #fff;
+  position: relative;
+  min-height: 100vh;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px; }
+
+img {
+  max-width: 100%;
+  margin-bottom: 0px !important; }
+
+a {
+  color: #333333; }
+
+a:hover {
+  text-decoration: none;
+  color: black; }
+
+/* BOOTSTRAP STUFF */
+.row {
+  margin: 0; }
+
+.carousel-indicators {
+  z-index: 0; }
+
+.right {
+  margin-right: 30px; }
+
+.img-circle {
+  border-radius: 50%; }
+
+[class*=col-md].center {
+  text-align: center; }
+
+.card {
+  border-radius: 0px;
+  margin-left: 30px; }
+  .card-header {
+    text-align: left;
+    background-color: transparent;
+    padding: 10px; }
+  .card-body {
+    text-align: justify;
+    color: #a6a6a6; }
+  .card button {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #333; }
+  .card .icon {
+    color: #95e1d3;
+    font-size: 36px;
+    margin-right: 10px; }
+
+.card:not(:last-child) {
+  margin-bottom: 10px; }
+
+.nav-item.nav-link.active {
+  color: #fce38a;
+  border-bottom: 2px solid #fce38a; }
+
+.right {
+  text-align: right; }
+
+.padded {
+  padding: 0 30px 30px 30px; }
+
+@media screen and (max-width: 767px) {
+  .mflex-sm-column {
+    flex-direction: column !important; } }
+
+/*# sourceMappingURL=index.css.map */

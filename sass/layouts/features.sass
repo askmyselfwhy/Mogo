@@ -1,0 +1,42 @@
+
+.features
+  background: url('../images/features_back.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+  text-align: center
+  position: relative
+
+.devices
+  position: relative
+
+.features .tablet
+  width: 380px
+
+.features .mobile
+  position: absolute
+  bottom: -60px
+  left: 50%
+  margin-left: 140px
+  width: 170px
+
+@media screen and (max-width: 768px)
+  .features
+    .tablet
+      width: 210px
+    .mobile
+      position: absolute
+      bottom: -60px
+      left: 50%
+      margin-left: 70px
+      width: 110px
+
+@media screen and (max-width: 360px)
+  .features
+    .tablet
+      width: 150px
+    .mobile
+      position: absolute
+      bottom: -30px
+      left: 50%
+      margin-left: 35px
+      width: 70px

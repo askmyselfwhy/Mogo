@@ -1,0 +1,68 @@
+.clients
+  position: relative
+  z-index: 10
+  background: url("../images/clients_bg.jpg") no-repeat
+  background-size: cover
+
+  .item
+    margin-bottom: 30px
+
+    .avatar
+      margin-right: 30px
+    .info
+      text-align: left
+    h2, p
+      margin: 0
+      font-size: 14px
+    p
+      margin-top: 1.5em
+      color: #999999
+      font-family: "Roboto"
+    h2:nth-child(2)
+      text-transform: capitalize
+      font-style: italic
+      margin-bottom: 1em
+      position: relative
+      padding-bottom: 20px
+      &:after
+        content: ''
+        position: absolute
+        left: 0
+        bottom: 0
+        width: 50px
+        height: 3px
+        background-color: $cMain_1
+    h2:first-child
+      font-size: 14px
+      font-weight: bold
+      text-transform: uppercase
+      margin-bottom: 1em
+
+
+
+
+@media screen and (max-width: 992px)
+  .clients
+    .item
+      flex: 0 0 100%
+      max-width: 100%
+
+@media screen and (max-width: 480px)
+  .clients
+    .item
+      .info.col-8, .avatar
+        max-width: 100%
+        flex-basis: 100%
+      .info
+        text-align: center
+
+        h2:nth-child(2)
+          padding: 0px
+          &:after
+            content: ''
+            display: none
+      .avatar
+        margin: 10px 0px
+
+
+

@@ -1,0 +1,46 @@
+/*
+font-family: 'Kaushan Script', cursive;
+*/
+.works div[class*=col-md] {
+	padding: 0;
+}
+.work {
+	cursor: pointer;
+	overflow: hidden;
+}
+.work:hover .hidden {
+	opacity: 1;
+}
+.works .overlay {
+	opacity: 0;
+	position: absolute;
+}
+.works .container {
+	margin: 0 auto;
+}
+.works .hidden {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	color: #fff;
+	opacity: 0;
+	transition: .2s ease;
+}
+.work .content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.work h2 {
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.work p {
+	font-style: italic;
+}

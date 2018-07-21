@@ -1,0 +1,52 @@
+.works
+
+	div[class*=col]
+		padding: 0
+	.work
+		cursor: pointer
+		overflow: hidden
+		.content
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: center
+		h2
+			font-size: 1em
+			font-weight: bold
+			text-transform: uppercase
+		p
+			font-style: italic
+
+		&:hover
+			.hidden
+				opacity: 1
+
+	.overlay
+		opacity: 0
+		position: absolute
+
+	.container
+		margin: 0 auto
+
+	.hidden
+		position: absolute
+		display: flex
+		align-items: center
+		justify-content: center
+		text-align: center
+		height: 100%
+		width: 100%
+		color: #fff
+		opacity: 0
+		transition: .25s ease
+
+
+@media screen and (max-width: 768px)
+
+	.works
+		.work
+			.content
+			h2
+				font-size: .5em
+			p
+				font-size: .5em

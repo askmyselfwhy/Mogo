@@ -1,0 +1,34 @@
+$transitionTime: .5s ease
+
+.hoverable-card
+  position: relative
+  background-color: $cSecondary
+
+  .content
+    transition: $transitionTime
+    .background
+      background-size: cover
+      position: relative
+    .overlay
+      opacity: 0
+      transition: $transitionTime
+    .hidden
+      display: flex
+      width: 100%
+      height: 100%
+      opacity: 0
+      position: absolute
+      left: 0
+      top: 0
+      color: #fff
+      align-items: center
+      justify-content: center
+      transition: $transitionTime
+  &:hover
+
+    .content
+      transform: translate(-10px, -10px)
+      .overlay
+        opacity: 0.8
+      .hidden
+        opacity: 1

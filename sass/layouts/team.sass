@@ -1,0 +1,84 @@
+.team
+
+  .hoverable-card
+    .content
+      .hidden
+        display: flex
+        a
+          display: inline-block
+        .icon
+          color: #fff
+          background-color: $cMain_2
+          color: $cMain_1
+          font-size: 3.5em
+          // max-width: 56px
+          // max-height: 56px
+          padding: 0
+          margin: 0
+          margin-right: 2px
+          transition: .3s ease
+
+          &:hover
+            background-color: $cMain_1
+            color: #fff
+
+.team-card
+  margin: 0 15px
+  .description
+    padding-top: 30px
+    background-color: #fff
+
+  .name
+    text-transform: uppercase
+    font-weight: bold
+    font-size: 14px
+
+  .position
+    color: #999999
+    font-size: 14px
+
+
+
+.brands
+  background-color: #f8f8f8
+  margin-top: 120px
+  padding: 50px 0px
+  .brand
+    cursor: pointer
+    img
+      transition: .3s ease
+
+    &:hover img
+      transform: scale(1.1)
+
+
+
+@media screen and (max-width: 992px)
+
+  .team-container
+    // flex-direction: column
+    // justify-content: center
+    // align-items: center
+    // .team-card
+    //   margin: 15px 0
+    // img
+    //   max-height: 350px
+
+  .team
+    .hoverable-card
+      .content
+        .hidden
+          a
+          .icon
+            font-size: 2.5em
+  .brands
+    margin-top: 60px
+
+@media screen and (max-width: 556px)
+  .team
+    .hoverable-card
+      .content
+        .hidden
+          a
+          .icon
+            font-size: 2em

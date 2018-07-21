@@ -1,0 +1,50 @@
+.section
+  color: #333333
+  position: relative
+  text-align: center
+  padding-top: 90px
+
+  &-header
+    margin-bottom: 43px
+
+  .pre-header
+    font-family: 'Kaushan Script', cursive
+    font-size: 2em
+    &::first-letter
+      text-transform: uppercase
+
+  .header
+    font-weight: bold
+    font-size: 2.5em
+    text-transform: uppercase
+
+  &__description
+    margin-bottom: 95px
+    color: #999999
+
+section.teal
+  background-color: $cSecondary
+
+section.grey
+  background-color: #f8f8f8
+
+
+
+@media screen and (max-width: 960px)
+  .section
+    padding-top: 35px
+
+    header
+      margin-bottom: 21px
+
+    &__pre-header
+      font-size: 2em
+
+    &__header
+      font-size: 2em
+      margin-bottom: 21px
+
+    &__description
+      margin-bottom: 35px
+      padding: 10px
+

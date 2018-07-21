@@ -1,0 +1,84 @@
+.blog-post
+  margin: 0 15px
+  .blog-img
+    border: 3px solid transparent
+    transition: .2s ease
+
+    &:hover
+      border: 3px solid $cMain_1
+
+      .date
+        background-color: $cMain_1
+
+    a
+      display: inline-block
+      height: 100%
+      width: 100%
+      position: relative
+
+      img
+        width: 100%
+  header
+    text-align: left
+    padding: 20px 0px
+    margin: 0px
+    h2
+      text-transform: uppercase
+      font-size: 14px
+      font-weight: bold
+    p
+      color: #999999
+      margin: 0
+  .stats
+    padding: 20px 0px
+    text-align: left
+    font-style: italic
+    color: #999999
+    .views
+      margin-right: 20px
+
+
+  .teal
+    color: $cSecondary
+
+  .date
+    position: absolute
+    left: -10px
+    bottom: 10px
+    display: flex
+    padding: 10px
+    flex-direction: column
+    color: #fff
+    transition: .2s ease
+    background-color: $cSecondary
+
+    .day
+      font-size: 30px
+      font-weight: bold
+    .month
+      text-transform: capitalize
+      font-family: "Roboto"
+      font-style: italic
+
+
+@media screen and (max-width: 767px)
+  .blog-post
+    padding: 10px
+    margin: 15px 0
+
+    .date
+      flex-direction: row
+      justify-content: center
+      bottom: 0
+      left: 0
+      width: 100%
+      font-size: 24px
+      .month
+        font-weight: bold
+        font-style: normal
+        order: 1
+        &:after
+          content: ', '
+      .day
+        font-size: 24px
+        order: 2
